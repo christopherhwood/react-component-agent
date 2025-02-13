@@ -1,0 +1,23 @@
+{
+  "name": "react-component-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "build": "cd frontend && npm run build; mkdir ../backend/src/build; cp -r ./build/* ../backend/src/build/",
+    "install": "cd backend && npm install; cd ../frontend && npm install",
+    "start": "cd backend && npm start",
+    "test": "cd backend && npm test; cd ../frontend && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherhwood/react-component-agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopherhwood/react-component-agent/issues"
+  },
+  "homepage": "https://github.com/christopherhwood/react-component-agent#readme"
+}

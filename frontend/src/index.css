@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* For the whole page */
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #111827; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #030712; /* color of the scroll thumb */
+  border-radius: 6px; /* roundness of the scroll thumb */
+  border: 3px solid #030712; /* creates padding around scroll thumb */
+}
+
+/* For specific elements, now targeting elements with the 'dark-scroll' class */
+.dark-scroll::-webkit-scrollbar, .ace_scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.dark-scroll::-webkit-scrollbar-track, .ace_scrollbar::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+.dark-scroll::-webkit-scrollbar-thumb, .ace_scrollbar::-webkit-scrollbar-thumb {
+  background-color: #111827;
+  border-radius: 6px;
+  border: 3px solid #030712;
+}
